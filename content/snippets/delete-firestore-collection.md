@@ -48,7 +48,7 @@ firebase login:ci
 firebase functions:config:set ci_token="your_token"
 ```
 
-The function should validate the user has permission to run the operation. If allowed, it runs the CLI command recursively on the collection and its nested subcollections. 
+The function should validate the user's permission to run the operation. If allowed, it runs the CLI command recursively on the collection and its nested subcollections. 
 
 ```js
 const project = process.env.GCLOUD_PROJECT;
